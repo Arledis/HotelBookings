@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/api/bookings'
+const baseUrl = 'http://localhost:3000/api/bookings/'
 
 export default {
   getBookings(){

@@ -59,7 +59,7 @@ const createRouter = function(collection) {
     collection
     .findOneAndUpdate(
       {_id: ObjectID(id)},
-      {$set: updatedData},
+      {$set: {updatedData}},
       {returnOriginal: false}
     )
     .then((result) => {
