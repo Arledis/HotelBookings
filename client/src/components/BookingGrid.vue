@@ -4,9 +4,8 @@
     <h2>{{booking.name}}</h2>
     <p>{{booking.email}}</p>
     <label for="">CheckedIn</label>
-    <input type="checkbox" name="checkedIn" value="checkedIn">
+    <input v-if="booking.checkedIn" checked="checked" type="checkbox" id="checkedIn">
   </div>
-
 </div>
 </template>
 
