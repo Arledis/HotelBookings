@@ -63,6 +63,7 @@ header {
 h1 {
   text-align: center;
   color: white;
+  font-size: 70px;
 
 }
 
