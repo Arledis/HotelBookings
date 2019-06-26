@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <h1>Hotel Breakdown</h1>
-      <booking-form/>
+    <header>
+      <h1>Hotel Breakdown</h1>
+        <booking-form/>
+    </header>
       <booking-grid :bookings="bookings"/>
   </div>
 
@@ -34,21 +36,24 @@ export default {
 </script>
 
 <style>
-/* #app {
+#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-} */
 
+}
+* {
+  margin-top: 0;
+  padding: 0;
+}
 html {
   height: 100%;
 }
 
-body {
-  background: url('./assets/hotel.png');
+header {
+  background: url('./assets/paris.png');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +63,7 @@ body {
 h1 {
   text-align: center;
   color: white;
-  
+
 }
 
 /* body::after {

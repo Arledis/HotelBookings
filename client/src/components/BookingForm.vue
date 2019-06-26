@@ -1,6 +1,6 @@
 <template lang="">
   <form v-on:submit="handleSubmit" method="post" id="booking-form">
-    <h2>Add Booking</h2>
+    <h2>Register Booking</h2>
     <div class="formWrap">
       <label for="name">Name:</label>
       <input v-model="name" type="text" id="name" required/>
@@ -13,7 +13,6 @@
       <label for="CheckedIn">CheckedIn</label>
       <input v-model="checkedIn" type="checkbox" id="checkedIn">
     </div>
-
     <input type="submit" id="Save" value="Save">
   </form>
 </template>
@@ -57,7 +56,7 @@ h2 {
 }
 
 form {
-	width: 75%;
+	width: 35%;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.7);
 	padding: 20px;
@@ -71,5 +70,14 @@ label {
 
 .formWrap {
 	margin-bottom: 10px;
+}
+
+#Save{
+  	color: #fff;
+  	border: none;
+  	font-size: 18px;
+  	padding: 10px;
+  	margin-top: 10px;
+  	background: rgb(34,142,196);
 }
 </style>

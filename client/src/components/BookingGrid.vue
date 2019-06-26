@@ -5,8 +5,10 @@
     <p>{{booking.email}}</p>
     <label for="">CheckedIn</label>
     <input v-if="booking.checkedIn" checked="checked" type="checkbox" id="checkedIn">
-    <button v-on:click="handleDelete(booking._id)">Delete Booking</button>
-  </div>
+    <div class="">
+      <button v-on:click="handleDelete(booking._id)">Delete Booking</button>
+    </div>
+    </div>
 </div>
 </template>
 
@@ -41,7 +43,7 @@ export default {
 #bookingsGrid {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 h2 {
@@ -51,7 +53,7 @@ h2 {
 
 .booking {
 	width: 30%;
-	background: rgba(255, 255, 255, 0.7);
+	background: radial-gradient(circle, rgba(80,120,140,1) 0%, rgba(153,172,191,1) 72%);
 	margin-bottom: 20px;
 	padding: 25px;
 }
@@ -62,6 +64,6 @@ button {
 	font-size: 18px;
 	padding: 10px;
 	margin-top: 10px;
-	background: #F55536;
+	background: rgb(34,142,196);
 }
 </style>
